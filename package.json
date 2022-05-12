@@ -1,0 +1,53 @@
+{
+  "name": "@theart84/custom-logger",
+  "version": "1.0.0",
+  "description": "Custom logger for nestjs",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "rimraf lib && tsc -p tsconfig.build.json",
+    "format": "prettier --write '**/*.md' '**/*.json' '**/*.ts' '**/*.yml' .prettierrc"
+  },
+  "keywords": [
+    "logger",
+    "nestjs"
+  ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "files": [
+    "lib"
+  ],
+  "private": false,
+  "author": "theart84",
+  "license": "MIT",
+  "repository": "https://github.com/theart84/custom-logger.git",
+  "peerDependencies": {
+    "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "mongodb": "^4.5.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.0.0 || ^7.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^8.0.7",
+    "@nestjs/core": "^8.0.7",
+    "@nestjs/testing": "^8.0.7",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mongodb": "^4.5.0",
+    "prettier": "^2.4.1",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^7.3.0",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.3"
+  }
+}
